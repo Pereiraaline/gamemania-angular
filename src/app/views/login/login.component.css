@@ -1,0 +1,131 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto regular";
+    border: none;
+  }
+   
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  a {
+    font-size: .9rem;
+  }
+  
+  a:hover { 
+    color: #08558B;
+  }
+  
+  /* container login */
+  #login-container {
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  
+  /* formulário */
+  form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: .9rem;
+  }
+  
+  input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #05185f;
+  }
+  
+  #forgot-pass {
+    display: block;
+    text-align: right;
+  }
+  
+  input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #251b1b;
+    font-weight: bold;
+    font-family: "titiliumweb";
+    font-size: 18px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #160d0d;
+    transition: .5s;
+  }
+  
+  /* registrar */
+  #register-container p {
+    margin-bottom: 10px;
+  }
+  
+  #assinatura{
+    color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+  
+  /************** RESPONSIVIDADE  **************/
+  
+  /* SMARTPHONE */
+  
+  @media screen and (max-width: 767px){
+    #login-container {
+      max-width: 330px;
+      margin-top: 8vh;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 3vh;
+    }
+    #login-container img{
+      max-width: 70%;
+      margin-bottom: 3px;
+      margin-top: 0;
+    }
+  
+    form {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      height: 35px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+  }
+  
+  

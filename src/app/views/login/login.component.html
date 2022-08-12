@@ -1,0 +1,20 @@
+<div id="login-container">
+    <img src="assets/images/gamemania.png" alt="">
+
+    <form action="" (ngSubmit)="fazerLogin()">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu e-email" autocomplete="off" [(ngModel)]="userModel.email">
+      <label for="password">Senha</label>
+      <input type="password" name="password" id="password" placeholder="Digite sua senha" [(ngModel)]="userModel.password">
+      <br><p id="msgValidacao" name="msgValidacao"></p>
+      <br><a href="#" id="forgot-pass">Esqueceu a senha?</a>
+      <input type="submit" (click)="validarLogin()" value="Login">  
+    </form>
+    <div id="register-container">
+      <p>Ainda não tem uma conta?</p>
+      <a href="#">Registrar</a>
+    </div>
+  </div>
+  <footer id="assinatura">
+    <p>&copy; Desenvolvido por Aline Pereira</p>
+</footer>
