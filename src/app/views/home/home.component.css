@@ -1,75 +1,3 @@
-header {
-    background-color: white;
-    height: 70px;
-  }
-
-
-.container-grid {
-    background-color: white;
-    margin: 0 auto;
-    max-width: 1200px;
-    height: 70px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.header-flex .imagem-logo{
-  width: 100px;
-  margin-inline-start: 0%;
-}
-
-.header-flex .imagem-logo img{
-  height: 60px;
-  transition: heigth 1s;
-}
-
-.imagem-logo:hover img{
-   height: 69px;
-} 
-
-.header-flex .btn-mobile{
-  display: none;
-}
-
-header .header-flex {
-    background-color: white;
-    display: flex;
-    height: 60px;
-    flex-direction: row; 
-    justify-content:space-between;
-    align-items: center;
-}
-
-
-header .menu {
-    justify-content:space-between;
-    align-items: center; 
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-}
-
-
-header .item-menu {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-family: "roboto regular";
-    text-shadow: #b6b6b6 0.1em 0.1em 0.1em;
-    }
-
-.item-menu:hover { 
-  border-left: 2px dotted black;
-  padding: 7px;
-  transition: .5s;
-}
-  
-
-
-
-
- 
-
 /************** BANNER **************/
 
 .banner {
@@ -273,8 +201,6 @@ transition: transform .5s ease;
   transform: scale(1.2, 1.2);
 }
 
-
-
 /************** SOBRE NÓS **************/
 
 .sobre-nos{
@@ -358,199 +284,12 @@ transition: transform .5s ease;
   transform: scale(1.1,1.1);
 }
 
-/************** RODAPÉ **************/
-
-.rodape{
-  max-width: 1200px;
-}
-
-.rodape-box{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-}
-
-.departamentos{
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-}
-
-.departamentos:hover{  
-  transform: scale(1.1,1.1);
-  }
-  
-.rodape-box h5{
-  color: #ffffff;
-  font-family: "roboto regular";
-  justify-content: center;
-  text-shadow: #211818 0.1em 0.1em 0.2em;
-}
-
-
-.rodape .departamentos ul{
-  padding: 0;
-}
-
-.rodape .departamentos a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "roboto regular";
-}
-
-.rodape .departamentos li{
-  list-style-type: none;
-}
-
-.institucional{
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-}
-
-.institucional:hover{  
-  transform: scale(1.1,1.1);
-  }
-  
-
-.rodape .institucional ul{
-  padding: 0;
-}
-
-.rodape .institucional a{
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "roboto regular";
-}
-
-.rodape .institucional li{
-  list-style-type: none;
-  padding: 0;
-}
-
-.minha-conta{
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-}
-
-.minha-conta:hover{  
-  transform: scale(1.1,1.1);
-  }
-  
-
-.rodape .minha-conta ul{
-  padding: 0;
-}
-
-.rodape .minha-conta a{
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "roboto regular";
-}
-
-.rodape .minha-conta li{
-  list-style-type: none;
-}
-
-.contato{
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-}
-
-.contato:hover{  
-  transform: scale(1.1,1.1);
-  }
-  
-.rodape .contato ul{
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "roboto regular";
-  padding: 0;
-}
-
-.rodape .contato li{
-  list-style-type: none;
-}
-
-.redes-sociais{
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-}
-
-.redes-sociais:hover{  
-  transform: scale(1.1,1.1);
-  }
-  
-.rodape .redes-sociais {
-  justify-content: center;
-  align-items: center;
-}
-
-.rodape .redes-sociais .logo-redes-sociais{
-  display: flex;
-  justify-content: space-between
-}
-
-#assinatura{
-  background-image: linear-gradient(90deg, #211818, #0099ca);
-  display: flex;
-  color: rgb(187, 187, 187);
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  font-size: 0.8rem;
-}
 
 /************** RESPONSIVIDADE  **************/
 
 /* TABLET */
 
 @media screen and (max-width: 967px){
-
-  /* CABEÇALHO */
-.container-grid {
-  max-width: 700px;
-}
-.header-flex .btn-mobile {
-  display: flex; 
-  border: none; 
-  background: none; 
-  margin-inline-end: 1vh
-}
-.header-flex .btn-mobile img{
-  height: 40px; width: 50px;
-}
-.header-flex .imagem-logo img{
-  height: 50px;
-}
-header .menu {
-  display: flex; 
-  position: absolute; 
-  flex-direction: column; 
-  width: 50%; 
-  height:0px; 
-  align-items: center; 
-  justify-content: space-around; 
-  background-color:#ffffff; 
-  right: 0px; 
-  top:60px; 
-  z-index: 10000;
-  opacity: 0.9; 
-  transition: 0.4s, opacity 0.6s;
-  visibility: hidden; 
-  overflow-y: hidden;
-}
-header .menu .item-menu{
-  border-left: 2px dotted black;
-  padding: 10px;
-  width: 60%;
-  margin-bottom: 10px;
-}
-header .menu.active {
-  display: flex; 
-  height: 100vh; 
-  visibility: visible; 
-  overflow-y: auto;
-}
 
   /* BANNER */
   .banner {
@@ -615,8 +354,7 @@ header .menu.active {
     margin-top: 0;
     margin-bottom: 0;
 
-  }
-  
+  } 
 
   /* SOBRE NÓS */
   .sobre-nos-box{
@@ -646,70 +384,11 @@ header .menu.active {
   .sobre-nos-info p{
     font-size: 0.9rem;
   } 
-
-  /* RODAPÉ */
-  .rodape-box{
-    width: 740px;
-  }
-  .departamentos{
-    padding: 0; 
-    margin-right: 2%;
-  }
-  .institucional .minha-conta .contato .redes-sociais{
-    margin-right: 2%;
-  }
-  .redes-sociais h5{
-    margin-left: 22%;
-  }
-  .redes-sociais .logo-redes-sociais{
-    flex-direction: column; 
-    align-items: center;
-  }
-  .redes-sociais .logo-redes-sociais .insta{
-    margin: 5%;
-  }
-  .redes-sociais .logo-redes-sociais .face{
-    margin: 5%;
-  }
-  .redes-sociais .logo-redes-sociais .whats{
-    margin: 5%;
-  } 
 }
 
 /* SMARTPHONE */
 
 @media screen and (max-width: 767px){
-
-   /* CABEÇALHO */
-   .container-grid {
-     max-width: 100%;
-    } 
-   .header-flex .btn-mobile {
-     display: flex; 
-     border: none; 
-     background: none;
-    }
-   .header-flex .btn-mobile img{
-     height: 30px; 
-     width: 40px;
-    }
-   .header-flex .imagem-logo img{
-     height: 40px; 
-     margin-inline-start: 3vh;
-    }
-    header .menu.active { 
-      height: 100vh; 
-      width: 80%;
-    }
-     header .menu .item-menu{
-      border-left: 1px dotted black;
-      padding: 5px;
-      width: 70%;
-      margin-bottom: 5px;
-      font-size: 0.9rem;
-     }
-   
-    
  
   /* BANNER */
 
@@ -799,105 +478,41 @@ header .menu.active {
   .card .card-body .card-text{
     font-size: 0.9rem;
   }
- 
 
- /* SOBRE NÓS */
+   /* SOBRE NÓS */
 
  .sobre-nos{
-   max-width: 100%;
-  }
- .sobre-nos-box{
-   height: 480px; 
-   margin-inline-end: 3%; 
-   flex-direction: column;
-  }
+  max-width: 100%;
+ }
+.sobre-nos-box{
+  height: 480px; 
+  margin-inline-end: 3%; 
+  flex-direction: column;
+ }
 
- .imagem-sobre-nos{
-   width: 320px;
-  margin-inline-start:2%;
-  }
- .imagem-sobre-nos img{
-   border-radius: 10px; 
-   width: 100%; 
-   height: 230px;
-  }
- .sobre-nos-info {
-   width: 320px;
-   height: 200px; 
-   margin-inline-start: 3%;
-  }
- .sobre-nos-info h4{ 
-   font-size: 1.5rem; 
-   margin-block-end: 3vh; 
-   margin-top: 3vh;
-  }
- .sobre-nos-info .p{
-   font-size: 1rem;
-  } 
- .sobre-nos-info .container-p2{
-   display: none;
-  } 
-  
-
-  /* RODAPÉ */
-  .rodape{
-   max-width: 100%; 
-   align-items: center; 
-   height: 740px;
-  }
-  .rodape-box{
-    margin: 0 auto; 
-    width: 350px; 
-    display: flex; 
-    flex-direction: column-reverse; 
-    flex-wrap: wrap;
-  }
-  .rodape .redes-sociais .logo-redes-sociais{
-    flex-direction: row-reverse; 
-    width: 350px;
-    margin-top: 1vh;
-    justify-content: flex-end;
-    margin-inline-end: 0;
-  }
-  .rodape .redes-sociais .logo-redes-sociais .whats{
-    margin-inline-start: 0;
-  }
-  .rodape .redes-sociais h5{
-    margin: 0 auto; 
-    width: 350px;
-    margin-top: 2vh;
-    font-size: 1.rem;
-  }
-  .rodape .rodape-box .contato{
-    margin: 0 auto; 
-    width: 350px;
-    margin-top: 2vh;
-  }
-  .rodape .rodape-box .minha-conta{
-    margin: 0 auto; 
-    width: 350px;
-    margin-top: 2vh;
-  }
-  .rodape .rodape-box .institucional{
-    margin: 0 auto; 
-    width: 350px;
-    margin-top: 2vh;
-  }
-  .rodape .rodape-box .departamentos{
-    margin: 0 auto; 
-    width: 350px;
-    margin-top: 2vh;
-  }
-  .rodape .departamentos ul{
-    font-size: 0.9rem;
-  }
-  .rodape .institucional ul{
-    font-size: 0.9rem;
-  }
-  .rodape .minha-conta ul{
-    font-size: 0.9rem;
-  }
-  .rodape .contato ul{
-    font-size: 0.9rem;
-  }
+.imagem-sobre-nos{
+  width: 320px;
+ margin-inline-start:2%;
+ }
+.imagem-sobre-nos img{
+  border-radius: 10px; 
+  width: 100%; 
+  height: 230px;
+ }
+.sobre-nos-info {
+  width: 320px;
+  height: 200px; 
+  margin-inline-start: 3%;
+ }
+.sobre-nos-info h4{ 
+  font-size: 1.5rem; 
+  margin-block-end: 3vh; 
+  margin-top: 3vh;
+ }
+.sobre-nos-info .p{
+  font-size: 1rem;
+ } 
+.sobre-nos-info .container-p2{
+  display: none;
+ }  
 }

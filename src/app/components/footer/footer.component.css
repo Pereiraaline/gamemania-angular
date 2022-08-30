@@ -1,0 +1,277 @@
+/************** RODAPÉ **************/
+
+  *{
+    background-color: #ffffff;
+    margin-top: 8px;
+    }
+  
+  .rodape-box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  
+  .rodape-box h5{
+    color: black;
+    font-family: "roboto regular";
+    justify-content: center;
+    text-shadow: #211818 0.1em 0.1em 0.2em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .rodape .departamentos ul{
+    padding: 0;
+  }
+  
+  .rodape .departamentos a {
+    text-decoration: none;
+    color: black;
+    font-family: "roboto regular";
+  }
+  
+  .rodape .departamentos li{
+    list-style-type: none;
+  }
+  .departamentos li{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+  
+  .departamentos li:hover{  
+    transform: scale(1.1,1.1);
+    border-left: 1px dotted black;
+    padding: 3px;
+    transition: .5s;
+    cursor: pointer;
+    }
+  
+  .rodape .institucional ul{
+    padding: 0;
+  }
+  
+  .rodape .institucional a{
+    text-decoration: none;
+    color: black;
+    font-family: "roboto regular";
+  }
+  
+  .rodape .institucional li{
+    list-style-type: none;
+    padding: 0;
+  }
+  .institucional li{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+  
+  .institucional li:hover{  
+    transform: scale(1.1,1.1);
+    border-left: 1px dotted black;
+    padding: 3px;
+    transition: .5s;
+    }
+ 
+  .rodape .minha-conta ul{
+    padding: 0;
+  }
+  
+  .rodape .minha-conta a{
+    text-decoration: none;
+    color: black;
+    font-family: "roboto regular";
+  }
+  
+  .rodape .minha-conta li{
+    list-style-type: none;
+  }
+  
+  .minha-conta li{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+  
+  .minha-conta li:hover{  
+    transform: scale(1.1,1.1);
+    border-left: 1px dotted black;
+    padding: 3px;
+    transition: .5s;
+    }
+ 
+  .rodape .contato ul{
+    text-decoration: none;
+    color: black;
+    font-family: "roboto regular";
+    padding: 0;
+  }
+  
+  .rodape .contato li{
+    list-style-type: none;
+  }
+  .contato li{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+  
+  .contato li:hover{  
+    transform: scale(1.1,1.1);
+    border-left: 1px dotted black;
+    padding: 3px;
+    transition: .5s;
+    cursor: pointer;
+    }
+ 
+  .rodape .redes-sociais {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rodape .redes-sociais .logo-redes-sociais{
+    display: flex;
+    justify-content: space-between
+  }
+
+  .rodape .redes-sociais .logo-redes-sociais .insta{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+  
+  .rodape .redes-sociais .logo-redes-sociais .insta:hover{  
+    transform: scale(1.2,1.2);
+    transition: .5s;
+    cursor: pointer;
+    }
+  
+  .rodape .redes-sociais .logo-redes-sociais .face{
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: transform .5s ease;
+    }
+    
+  .rodape .redes-sociais .logo-redes-sociais .face:hover{  
+      transform: scale(1.2,1.2);
+      transition: .5s;
+      cursor: pointer;
+      }
+  
+  .rodape .redes-sociais .logo-redes-sociais .whats{
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+      }
+      
+  .rodape .redes-sociais .logo-redes-sociais .whats:hover{  
+        transform: scale(1.2,1.2);
+        transition: .5s;
+        cursor: pointer;
+        }
+ 
+  #assinatura{
+    background-color: #ffffff;
+    display: flex;
+    color: rgb(107, 107, 107);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  /************** RESPONSIVIDADE  **************/
+
+/* TABLET */
+
+@media screen and (max-width: 967px){
+    /* RODAPÉ */
+  .rodape-box{
+    width: 740px;
+  }
+  .departamentos{
+    padding: 0; 
+    margin-right: 2%;
+  }
+  .institucional .minha-conta .contato .redes-sociais{
+    margin-right: 2%;
+  }
+  .redes-sociais h5{
+    margin-left: 22%;
+  }
+  .redes-sociais .logo-redes-sociais{
+    flex-direction: column; 
+    align-items: center;
+  }
+  .redes-sociais .logo-redes-sociais .insta{
+    margin: 5%;
+  }
+  .redes-sociais .logo-redes-sociais .face{
+    margin: 5%;
+  }
+  .redes-sociais .logo-redes-sociais .whats{
+    margin: 5%;
+  } 
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 767px){
+    /* RODAPÉ */
+  .rodape{
+    max-width: 100%; 
+    align-items: center; 
+    height: 740px;
+   }
+   .rodape-box{
+     margin: 0 auto; 
+     width: 350px; 
+     display: flex; 
+     flex-direction: column-reverse; 
+     flex-wrap: wrap;
+   }
+   .rodape .redes-sociais .logo-redes-sociais{
+     flex-direction: row-reverse; 
+     width: 350px;
+     margin-top: 1vh;
+     justify-content: flex-end;
+     margin-inline-end: 0;
+   }
+   .rodape .redes-sociais .logo-redes-sociais .whats{
+     margin-inline-start: 0;
+   }
+   .rodape .redes-sociais h5{
+     margin: 0 auto; 
+     width: 350px;
+     margin-top: 2vh;
+     font-size: 1.rem;
+   }
+   .rodape .rodape-box .contato{
+     margin: 0 auto; 
+     width: 350px;
+     margin-top: 2vh;
+   }
+   .rodape .rodape-box .minha-conta{
+     margin: 0 auto; 
+     width: 350px;
+     margin-top: 2vh;
+   }
+   .rodape .rodape-box .institucional{
+     margin: 0 auto; 
+     width: 350px;
+     margin-top: 2vh;
+   }
+   .rodape .rodape-box .departamentos{
+     margin: 0 auto; 
+     width: 350px;
+     margin-top: 2vh;
+   }
+   .rodape .departamentos ul{
+     font-size: 0.9rem;
+   }
+   .rodape .institucional ul{
+     font-size: 0.9rem;
+   }
+   .rodape .minha-conta ul{
+     font-size: 0.9rem;
+   }
+   .rodape .contato ul{
+     font-size: 0.9rem;
+   }
+}
+ 

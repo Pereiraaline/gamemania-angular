@@ -1,0 +1,165 @@
+#destaques{
+    background-image: linear-gradient(90deg, #211818, #0099ca);
+  }
+  
+  .row{
+    background-color: white;
+    border-radius: 10px;
+   
+  }
+
+  .container{
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+   
+  } 
+  
+  .container.titulo h3{ 
+    height: 60px;
+    display: flex;
+    font-family: "titiliumweb";
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-shadow: #211818 0.1em 0.1em 0.2em;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+  
+  .titulo:hover h3{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+
+  .card{
+    justify-content: center;
+    border: 10px;
+    height:80%;
+    display: flex;
+  }
+  
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+   .card .card-img-top{
+  height: 70%;
+  margin-top: 10px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  }
+  
+  .card-img-top:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+    
+  
+  .card .card-body h5{
+    font-family:"roboto regular";
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card .card-body p{
+    font-family:"roboto regular";
+    text-align: center;
+  }
+  
+  
+  .card-buy{
+    background-color: #037eaf;
+    border: #037eaf;
+    height: 40px;
+    width: 180px; 
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family:"roboto regular";
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  }
+  
+  .card-buy:hover{
+    background-color: #006086;
+    transition: 0.5s;
+    transform: scale(1.2, 1.2);
+  }
+
+  /************** RESPONSIVIDADE  **************/
+
+/* TABLET */
+
+@media screen and (max-width: 967px){
+    .card-buy{
+        width: 70%;
+        height: 70%;
+        font-size: 12px;
+      }
+    
+      .card .card-body h5{
+       font-size: 15px;
+      }
+      
+      .card .card-body p{
+        font-size: 12px;
+      }
+      
+      .container.titulo h3{
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+      } 
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 767px){
+    #destaques{
+        max-width: 100%;  
+      } 
+    
+      .row{
+        border-radius: 0;
+        margin: 0 auto; 
+        max-width: 90%;
+      }
+      .container.titulo{
+        margin-top: 8px;
+      }
+      .container.titulo h3{
+        font-size: 1.8rem; 
+        height: 35px; 
+        margin-bottom: 5%; 
+        margin: 0 auto;
+      }
+      .card .card-img-top{
+        height: 150px; 
+        width: 200px; 
+        margin: 0 auto;
+      }
+      .card .card-body .card-title{
+        font-size: 1.1rem;
+      }
+      .card .card-body .card-text{
+        font-size: 0.9rem;
+      }
+}
+
+ 

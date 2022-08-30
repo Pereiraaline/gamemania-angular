@@ -1,0 +1,44 @@
+{
+    "users": [
+      {
+        "email": "jose@email.com",
+        "password": "$2a$10$660Jwqd6oK5TdGFTldOB6.lunUR2QxAv3QErN/CsHn/bXdkketKjW",
+        "id": 2
+      },
+      {
+        "email": "maria.aparecida@email.com",
+        "password": "$2a$10$aABSxVHniHU0Z3z3b0oku./eXbiz5a71IUu.wJLuc0ewLow964DQa",
+        "id": 3
+      },
+      {
+        "email": "joao.silva@email.com",
+        "password": "$2a$10$IGdRvEVHSVjd20c4Ei7tAO4x6hvDd7D1SESh.nSsf88FiyienPwYC",
+        "id": 4
+      },
+      {
+        "email": "pedro.carlos@email.com",
+        "password": "$2a$10$miuNwcYNF41nT/LOwbw3Ie.NEDNA8jtEdPO1xsNVjYtI9wohK45ii",
+        "id": 5
+      }
+    ],
+    "products": [
+      {
+        "product": "Computador Game Xversion",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies, mauris id volutpat vehicula, purus odio laoreet lectus, ac condimentum ligula dolor ac neque. ",
+        "value": "R$3.999,00",
+        "id": 1
+      },
+      {
+        "product": "Smartphone MEGA",
+        "description": "Purus odio laoreet lectus, ac condimentum ligula dolor ac neque.",
+        "value": "R$1.699,00",
+        "id": 2
+      },
+      {
+        "product": "Notebook PRO",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "value": "R$ 3.899,00",
+        "id": 4
+      }
+    ]
+  }
