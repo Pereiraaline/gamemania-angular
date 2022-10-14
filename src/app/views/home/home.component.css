@@ -1,5 +1,4 @@
 /************** BANNER **************/
-
 .banner {
   height: 500px;
   background-repeat: no repeat;
@@ -11,8 +10,6 @@
 
 .banner .banner-box{
   display: flex;
-  /* justify-content: flex-end; */
-  /* justify-content:space-around; */
   justify-content:space-evenly;
   align-items: center;
   height: 500px ;
@@ -20,7 +17,6 @@
 
 
 .banner .banner-box .imagem-banner{
-  /* justify-content:flex-start; */
   display: flexbox;
   justify-content:flex-end;
   align-items:center;
@@ -47,7 +43,6 @@
     justify-content: space-between;
 }
 
-
 .banner .banner-box .banner-info h2{
     font-size: 70px;
     text-align: center;
@@ -58,6 +53,7 @@
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
   }
+
 .banner-info:hover h2{
   transform: scale(1.1,1.1);
 }
@@ -72,7 +68,7 @@
     transition: transform .5s ease;
   }
 
-  .banner-info:hover p{
+.banner-info:hover p{
     transform: scale(1.1,1.1);
   }
 
@@ -108,7 +104,6 @@
 #destaques{
   background-image: linear-gradient(90deg, #211818, #0099ca);
 }
-
 
 .row{
   background-color: white;
@@ -150,8 +145,7 @@ transition: transform .5s ease;
   align-items: center;
 }
 
-
- .card .card-img-top{
+.card .card-img-top{
 height: 70%;
 margin-top: 10px;
 -webkit-transition: -webkit-transform .5s ease;
@@ -163,7 +157,6 @@ transition: transform .5s ease;
   transform: scale(1.1);
 }
   
-
 .card .card-body h5{
   font-family:"roboto regular";
   text-transform: uppercase;
@@ -174,7 +167,6 @@ transition: transform .5s ease;
   font-family:"roboto regular";
   text-align: center;
 }
-
 
 .card-buy{
   background-color: #037eaf;
@@ -202,7 +194,6 @@ transition: transform .5s ease;
 }
 
 /************** SOBRE NÓS **************/
-
 .sobre-nos{
   background-image: linear-gradient(90deg, #211818, #0099ca);
   display: inline-flexbox;
@@ -284,11 +275,8 @@ transition: transform .5s ease;
   transform: scale(1.1,1.1);
 }
 
-
 /************** RESPONSIVIDADE  **************/
-
 /* TABLET */
-
 @media screen and (max-width: 967px){
 
   /* BANNER */
@@ -387,7 +375,6 @@ transition: transform .5s ease;
 }
 
 /* SMARTPHONE */
-
 @media screen and (max-width: 767px){
  
   /* BANNER */
@@ -406,7 +393,6 @@ transition: transform .5s ease;
     size: cover; 
     margin: 0 auto;
   } 
-  /* .banner-box .imagem-banner img{border-radius: 10px; height: 240px; width: 420px; position: absolute; top: 14vh; left: 8vh; z-index: 1;} */
   .banner-box .imagem-banner img{
     display: none;
   }
@@ -417,16 +403,13 @@ transition: transform .5s ease;
     z-index: 2;  
     left: auto;
     top: 85px;
-    /* height: 30vh; */
     max-width: 340px;
   }
-  /* .banner .banner-box .banner-info{width: 300px; height: 230px; position: absolute; z-index: 2; top: 23vh; left: 20vh;} */
   .banner .banner-box .banner-info{
     max-width: 90%; 
     position: absolute; 
     z-index: 2;  
     left: auto;
-    /* top: 20%;  */
   }
   .banner .banner-box .banner-info h2{
     font-size: 45px; 
@@ -448,7 +431,6 @@ transition: transform .5s ease;
   } 
 
   /* MAIS VENDIDOS */
-
   #destaques{
     max-width: 100%;  
   } 
@@ -480,7 +462,6 @@ transition: transform .5s ease;
   }
 
    /* SOBRE NÓS */
-
  .sobre-nos{
   max-width: 100%;
  }
